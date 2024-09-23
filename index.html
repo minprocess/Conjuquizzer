@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Verb Conjugation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>French Verb Conjugation Practice</h1>
+        <div id="accent-buttons">
+          <button type="button" onclick="addCharacter('à')" name="à">à</button>
+          <button type="button" onclick="addCharacter('â')" name="â">â</button>
+          <button type="button" onclick="addCharacter('æ')" name="æ">æ</button>
+          <button type="button" onclick="addCharacter('ç')" name="ç">ç</button>
+          <button type="button" onclick="addCharacter('é')" name="é">é</button>
+          <button type="button" onclick="addCharacter('è')" name="è">è</button>
+          <button type="button" onclick="addCharacter('ê')" name="ê">ê</button>
+          <button type="button" onclick="addCharacter('ë')" name="ë">ë</button>
+          <button type="button" onclick="addCharacter('ï')" name="ï">ï</button>
+          <button type="button" onclick="addCharacter('î')" name="î">î</button>
+          <button type="button" onclick="addCharacter('ô')" name="ô">ô</button>
+          <button type="button" onclick="addCharacter('œ')" name="œ">œ</button>
+          <button type="button" onclick="addCharacter('ù')" name="ù">ù</button>
+          <button type="button" onclick="addCharacter('û')" name="û">û</button>
+          <button type="button" onclick="addCharacter('ü')" name="ü">ü</button>
+          <button type="button" onclick="addCharacter('ÿ')" name="ÿ">ÿ</button>
+          <button type="button" onclick="addCharacter('€')" name="€">€</button>
+          <button type="button" onclick="addCharacter('“')" name="“">“</button>
+          <button type="button" onclick="addCharacter('”')" name="”">”</button>
+          <button type="button" onclick="addCharacter('«')" name="«">«</button>
+          <button type="button" onclick="addCharacter('»')" name="»">»</button>
+      </div>
+
+        <div id="verb-info"></div>
+        <form id="conjugation-form">
+            <label>je: <input type="text" id="je" class="textbox" name="je"></label><br>
+            <label>tu: <input type="text" id="tu" class="textbox" name="tu"></label><br>
+            <label>il/elle: <input type="text" id="il" class="textbox" name="il"></label><br>
+            <label>nous: <input type="text" id="nous" class="textbox" name="nous"></label><br>
+            <label>vous: <input type="text" id="vous" class="textbox" name="vous"></label><br>
+            <label>ils/elles: <input type="text" id="ils" class="textbox" name="ils"></label><br>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
